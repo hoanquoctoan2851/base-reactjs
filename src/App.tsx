@@ -3,7 +3,7 @@ import reactLogo from "@/assets/react.svg";
 import viteLogo from "/vite.svg";
 import "@/designs/App.css";
 import "@/designs/page/dashboard.scss";
-
+import AppRouter from "./routers/AppRouter";
 function App() {
 	const [count, setCount] = useState(0);
 	return (
@@ -22,6 +22,9 @@ function App() {
 				<p>
 					Edit <code>src/App.tsx</code> and save to test HMR
 				</p>
+			</div>
+			<div>
+				<AppRouter></AppRouter>
 			</div>
 		</>
 	);
