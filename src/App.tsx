@@ -1,9 +1,10 @@
-import { useState } from "react";
 import reactLogo from "@/assets/react.svg";
-import viteLogo from "/vite.svg";
 import "@/designs/App.css";
 import "@/designs/page/dashboard.scss";
-import AppRouter from "./routers/AppRouter";
+import { useState } from "react";
+import viteLogo from "/vite.svg";
+import { RouterProvider } from "react-router-dom";
+import routeElements from "./routers/useRouterModules";
 function App() {
 	const [count, setCount] = useState(0);
 	return (
@@ -19,12 +20,9 @@ function App() {
 			<h1>Vite + React</h1>
 			<div className="card">
 				<button onClick={() => setCount(count => count + 1)}>count is {count}</button>
-				<p>
-					Edit <code>src/App.tsx</code> and save to test HMR
-				</p>
 			</div>
 			<div>
-				<AppRouter></AppRouter>
+				<RouterProvider router={routeElements} />
 			</div>
 		</>
 	);
