@@ -1,6 +1,6 @@
+import DefaultLayout from "@/layouts/defaultLayout";
 import { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
-import DefaultLayout from "@/layouts/defaultLayout";
 const Dashboard = lazy(() => import("@/views/dashboard"));
 const About = lazy(() => import("@/views/about"));
 const routeElements = createBrowserRouter([

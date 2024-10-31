@@ -8,7 +8,8 @@ export default defineConfig((mode: ConfigEnv): UserConfig => {
 	const viteEnv = wrapperEnv(env);
 	return {
 		server: {
-			port: viteEnv.VITE_PORT
+			port: viteEnv.VITE_PORT,
+			open: true,
 		},
 		preview: {
 			port: viteEnv.VITE_PORT

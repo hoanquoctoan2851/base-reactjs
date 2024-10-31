@@ -1,4 +1,5 @@
-import "@/designs/index.css";
+import "@/designs/index.scss";
+import "@/designs/page/dashboard.scss";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
